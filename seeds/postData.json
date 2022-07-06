@@ -1,14 +1,18 @@
 [
   {
-    "title": "Music Near Me",
-    "content": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "title": "What C.S books would you recommend to an absolute beginner",
+    "content": "Hey guys, I've been thinking about a career to follow, and since I'm getting really good grades this semester in math and really started to explore it to a more deeper level, I wanted something related to math, but not so much physics lol. Then I saw a couple of videos on C.S. and it seemed cool but I don't know a thing! So I just want an introductory book to know the expressions, the culture of the thing, it's fields, etc. Thanks in advance"
   },
   {
     "title": "The Ultimate Tech Quiz",
     "content": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
   },
   {
-    "title": "Roll 'Em Up",
-    "content": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "title": "How does binary do… everything?",
+    "content": "Hello, I have very limited knowledge on computer science (made stuff on processing.is as a kid) and really have only taken a broader interest as I’ve started learning the object based music programming software Max MSP. Used Arduinos a little. This is probably a dumb question but I was wondering if anyone could explain this or send me in the direction of some resources to read n learn more - how is it that binary is able to create everything in a computer? I understand the whole on/off principle on circuit boards and it makes sense how permutations of 1 and 0 can make more numbers, but how can a series of 1/0 on/off inputs eventually allow things like, if statements, or variables that can change - the sort of building blocks that allow code? How do you move beyond simply indexing numbers? There’s a mental gap for me. Does it have to do more with how computers are built mechanically?"
+  },
+  {
+    "title": "Why is P vs NP so popular?",
+    "content": "I find that it’s intuitively clear that there is no way P=NP, I think we need different physical laws for that and I don’t understand the hype surrounding this question. I understand that the unability to prove P≠NP right now creates the fame but there are many other unproved interesting concepts that doesn’t come near dear P vs NP. I really don’t think it’s even that interesting to ponder about. Do you think it deserves the popularity? I would appreciate it if you could enlighten me and show me whats so great about it."
   }
 ]

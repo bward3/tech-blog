@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
+  <title>tech_zone</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Tech Blog</a>
+  <div class="flex-column justify-space-around mono text-lowercase">
+    <header class="display-flex justify-space-between align-center p-2 bg-primary text-light">
+      <h1 class="mx-1 my-0">
+        <a href="/">tech_zone</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
@@ -26,7 +25,7 @@
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main class="container container-fluid mt-5 text-dark justify-center">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>

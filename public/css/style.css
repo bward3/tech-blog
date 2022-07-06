@@ -2,12 +2,21 @@ header, .post:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+.truncate {
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+
 .no-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #1cc5bd;
   text-decoration: none;
   font-size: 100%;
 }
@@ -21,4 +30,44 @@ header, .post:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+}
+
+.card textarea {
+  width: 98%;
+  resize: vertical;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  padding: 0;
+  margin: 0;
+  margin-left: .5rem;
+}
+
+.post-details {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+  margin-right: .5rem;
+}
+
+.post-content {
+  font-size: 1rem;
+  overflow-wrap: break-word;
+}
+
+.comment p {
+  font-size: 1rem;
+}
+
+.mono {
+  font-family: 'Courier New', Courier, monospace;
 }

@@ -14,7 +14,7 @@ Comment.init({
         autoIncrement: true,
     },
     content: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
     },
     date_created: {
         type: DataTypes.DATE,
@@ -31,7 +31,7 @@ Comment.init({
     post_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'user',
+            model: 'post',
             key: 'id'
         }
     }

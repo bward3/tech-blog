@@ -420,13 +420,12 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: #1cc5bd;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
-  text-decoration: underline;
+  color: #175781;
 }
 
 /* HEIGHT / WIDTH UTILS */
@@ -436,6 +435,10 @@ a:hover {
 
 .w-75 {
   width: 75%;
+}
+
+.w-65 {
+  width: 65%;
 }
 
 .w-50 {
@@ -920,6 +923,10 @@ a:hover {
   background-color: #2d3e50 !important;
 }
 
+.bg-secondary {
+  background-color: rgb(110, 117, 124) !important;
+}
+
 .bg-info {
   background-color: #1bbc9b !important;
 }
@@ -995,6 +1002,7 @@ a:hover {
 .btn.btn-sm {
   font-size: 0.85rem;
   padding: 0.3rem 0.9rem;
+  margin: .1rem;
 }
 
 .btn.btn-lg {

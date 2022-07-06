@@ -1,8 +1,55 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <button class="btn btn-primary">Fund this Post!</button>
-  </p>
+<div>
+  <div class="row mb-4 card">
+    <div class="col-12 display-flex justify-space-between card-header align-center">
+      <p class="post-title">{{title}}</p>
+      <p class="post-details">Created by {{user.name}} on {{format_date date_created}}</p>
+    </div>
+    <div id="content-card" class="card-body display-flex justify-space-between w-100 align-center">
+      <div id = "post-div"class="col-10">
+        <p id="post-content" class="m-0 post-content">
+          {{content}}
+        </p>
+      </div>
+      {{#if my_post}}
+      <div class="display-flex col-2 justify-flex-end">
+        <button id="edit-btn" class="no-button m-2">EDIT</button>
+        <button id="del-btn" class="no-button m-2">DELETE</button>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  {{#if comments.length}}
+  <ul class="pl-2 col-10">
+    {{#each comments as |comment|}}
+    <li class="card comment">
+      <div class="card-header p-0 bg-secondary">
+        <p class="m-0">{{comment.user.name}} commented on {{format_date comment.date_created}}</p>
+      </div>
+      <div>
+        <p class="m-0 pl-2">{{comment.content}}</p>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
 </div>
+{{#if logged_in}}
+<div class="row mt-4">
+  <div class="col-md-6">
+    <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment-content">post a comment:</label>
+        <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' class="form-input" style= "resize: none" id="comment-content" title="comment-content"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Comment</button>
+      </div>
+    </form>
+  </div>
+  {{else}}
+  <a href="/login">login</a> to comment
+</div>
+{{/if}}
+
+<script src="../js/post.js"></script>
